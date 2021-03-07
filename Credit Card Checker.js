@@ -82,6 +82,10 @@ function idInvalidCardCompanies(nest) {
   return finalArray
 };
 console.log(idInvalidCardCompanies(batch))
-
-
+//below converts random number strings into arrays that can be parsed by initial validation function
+const convertStr = str => {
+  let newNum = parseInt(str)
+  let newArray = Array.from(String(newNum), Number)
+  return newArray
+}
 
